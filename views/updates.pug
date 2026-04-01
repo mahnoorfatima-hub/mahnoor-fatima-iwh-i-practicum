@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1 Add Car
+
+    a(href="/") Back to Home
+
+    form(action="/update-cobj" method="POST")
+      label Name:
+      input(type="text" name="name" required)
+      br
+
+      label Modal:
+      input(type="text" name="modal" required)
+      br
+
+      label Owner:
+      input(type="text" name="owner" required)
+      br
+
+      button(type="submit") Submit

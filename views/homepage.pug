@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1 Car Records
+
+    a(href="/update-cobj") Add to this table
+
+    table(border="1")
+      tr
+        th Name
+        th Modal
+        th Owner
+
+      each record in records
+        tr
+          td= record.properties.name
+          td= record.properties.modal
+          td= record.properties.owner
